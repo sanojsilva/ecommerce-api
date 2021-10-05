@@ -54,6 +54,10 @@
     "featured": {
       "type": "boolean",
       "default": false
+    },
+    "carts": {
+      "via": "product",
+      "collection": "cart"
     }
   }
 }

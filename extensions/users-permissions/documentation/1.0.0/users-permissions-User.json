@@ -1392,6 +1392,45 @@
                 "type": "string"
               }
             }
+          },
+          "address": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "integer"
+          },
+          "carts": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id",
+                "qty",
+                "price"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "qty": {
+                  "type": "integer"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "users_permissions_user": {
+                  "type": "string"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -1433,6 +1472,18 @@
           },
           "role": {
             "type": "string"
+          },
+          "address": {
+            "type": "string"
+          },
+          "phoneNumber": {
+            "type": "integer"
+          },
+          "carts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
           },
           "created_by": {
             "type": "string"

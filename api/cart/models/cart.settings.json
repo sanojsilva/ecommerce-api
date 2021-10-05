@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "carts",
+  "info": {
+    "name": "cart"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "product": {
+      "model": "product",
+      "via": "carts"
+    },
+    "qty": {
+      "type": "integer",
+      "min": 1,
+      "default": 1,
+      "required": true
+    },
+    "price": {
+      "type": "decimal",
+      "default": 0,
+      "required": true
+    },
+    "users_permissions_user": {
+      "plugin": "users-permissions",
+      "model": "user",
+      "via": "carts"
+    }
+  }
+}

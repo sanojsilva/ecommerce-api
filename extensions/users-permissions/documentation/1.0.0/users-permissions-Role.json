@@ -561,6 +561,18 @@
                 "role": {
                   "type": "string"
                 },
+                "address": {
+                  "type": "string"
+                },
+                "phoneNumber": {
+                  "type": "integer"
+                },
+                "carts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                },
                 "created_by": {
                   "type": "string"
                 },
