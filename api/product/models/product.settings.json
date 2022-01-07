@@ -58,6 +58,10 @@
     "carts": {
       "via": "product",
       "collection": "cart"
+    },
+    "orderitems": {
+      "via": "product",
+      "collection": "orderitem"
     }
   }
 }

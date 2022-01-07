@@ -569,6 +569,12 @@
                   "type": "string"
                 }
               },
+              "orderitems": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
               "created_by": {
                 "type": "string"
               },
@@ -629,6 +635,12 @@
                 "type": "integer"
               },
               "carts": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "orders": {
                 "type": "array",
                 "items": {
                   "type": "string"

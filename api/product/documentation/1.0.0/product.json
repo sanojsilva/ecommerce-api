@@ -738,6 +738,37 @@
                 }
               }
             }
+          },
+          "orderitems": {
+            "type": "array",
+            "items": {
+              "required": [
+                "id"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string"
+                },
+                "product": {
+                  "type": "string"
+                },
+                "order": {
+                  "type": "string"
+                },
+                "qty": {
+                  "type": "integer"
+                },
+                "price": {
+                  "type": "number"
+                },
+                "created_by": {
+                  "type": "string"
+                },
+                "updated_by": {
+                  "type": "string"
+                }
+              }
+            }
           }
         }
       },
@@ -769,6 +800,12 @@
             "default": false
           },
           "carts": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "orderitems": {
             "type": "array",
             "items": {
               "type": "string"
